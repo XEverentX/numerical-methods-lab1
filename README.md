@@ -2,12 +2,11 @@
 
 ## Структура директорий
 
-- [main_window](main_window) - папка с реализацией главного окна
-- [tables](tables) - папка с реализацией таблиц
-- [ui](ui) - папка с шаблоном для QT Designer
+- [differential_equation](differential_equation) - проект с решением дифференциального уравнения методом РК 4 порядка
+- [differential_equation_system](differential_equation_system) - проект с решением системы дифференциальных уравнений методом РК 4 порядка
 
 ## Зависимости
-- Python QT5
+- PyQt5
 - Matplotlib
 
 ## Установка
@@ -25,19 +24,33 @@
    ```bash
    pip install matplotlib
    ```
- ## Запуск приложения
+ ## Запуск приложений
 
 - Windows
     1. Открыть командную строку
     2. Перейти в директорию numerical-methods-lab1
-    3. В командной строке ввести:
-    ```bash
-    python lab1.py
-    ```
+    3. Для запуска программы с решением ДУ:
+        ```bash
+        cd .\differential_equation
+        python differential_equation.py
+        ```
+       Для запуска программы с решением системы ДУ:
+        ```bash
+        cd .\differential_equation_system
+        python differential_equation_system.py
+        ```
+
 - Linux
     1. Открыть командную строку
     2. Перейти в директорию numerical-methods-lab1
-    3. В командной строке ввести:
-    ```bash
-    python3 lab1.py
+    3. Для запуска программы с решением ДУ:
+        ```bash
+        cd ./differential_equation
+        python3 differential_equation.py
+        ```
+       Для запуска программы с решением системы ДУ:
+        ```bash
+        cd ./differential_equation_system
+        python3 differential_equation_system.py
+        ```
     ```    
